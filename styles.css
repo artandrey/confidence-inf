@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(./450678_600.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+}
+.flex {
+    background-color: violet;
+    width: 100%;
+    height: 30px;
+}
+ .btn {
+     width: 300px;
+     height: 20px;
+     display: block;
+     margin: 0 auto;
+     background: white;
+     border: solid yellowgreen 1px;
+     margin-top: 30px;
+     margin-bottom: 50px;
+ }
+ .btn:hover {
+     border: solid yellow;
+     transform: scale(2);
+ }
+
+ a{
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    color: white;
+ }
+
+ a:hover{
+
+    color:darkred;
+ }
+ .element {
+    width: 100%;
+     height: 27px;
+     border: solid;
+     display: inline;
+ }
+
+ .list {
+    text-align: center;
+ }
+.btn-flex {
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border: solid cadetblue 1px;
+}
+ .btn-flex:hover {
+    transform: translate(350px,0);
+  
+ }
+
+ img {
+     margin: 0 auto;
+     margin-right: 30px;
+ }
+
+ .Oleg{
+     text-align: center;
+     margin-top: 50px;
+
+ }
+
+ img:nth-child(2n) {
+     margin-right: 30px;
+ }
+ li {
+     display: inline-block;
+ }
+ .PODVINSYA {
+     margin-right: 30px;
+ }
+
+ section {
+     width: 100%;
+     height: max-content;
+ }
+ 
+ img {
+     border: solid darkgray 10px;
+ }
