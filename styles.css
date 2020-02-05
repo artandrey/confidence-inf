@@ -5,7 +5,7 @@
 
 
 body {
-    background-image: url(./450678_600.jpg);
+    background-image: url(./img/450678_600.jpg);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto Mono', monospace;
@@ -90,3 +90,5 @@ body {
  img {
      border: solid darkgray 10px;
  }
+
+ 

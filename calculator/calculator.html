@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-size: 100px;
+        }
+        .start-btn {
+            position: absolute;
+            z-index: 3;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 50px;
+            display: inline-block;
+            border: transparent;
+            background-color: #386cb9;
+            font-family: 'Sigmar One', cursive;
+            font-weight: 400;
+            font-size: 20px;
+            color: #ffffff;
+            transition: .3s;
+            border-radius: 10px;
+        }
+        .start-btn:hover {
+            background-color: #4177c9;
+            color: #f7f19d;
+            -webkit-box-shadow: 1px 8px 19px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 8px 19px 0px rgba(0,0,0,0.75);
+            box-shadow: 1px 8px 19px 0px rgba(0,0,0,0.75);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="calculator()" class="start-btn">Start the calculator</button>
+    <script type="text/javascript">
+           function calculator() {
+               var firstNumber = prompt("Введите певое число");
+               var operator = prompt("Введите оператор");
+               var secoundNumber = prompt("Введите второе число");
+       
+               switch (operator) {
+                   case ("/"): {
+                       var result = (+firstNumber / +secoundNumber);
+                   }
+                   break;
+                   case ("*"): {
+                       var result = (+firstNumber * +secoundNumber);
+                   }
+                   break;
+                   case ("+"): {
+                       var result = (+firstNumber + +secoundNumber);
+                   }
+                   break;
+                   case ("-"): {
+                       var result = (+firstNumber - +secoundNumber);
+                       break;
+                   }
+                   case ("Oleg"): {
+                       EasterEgg();
+                       break;
+                   }
+                   case ("Олег"): {
+                       EasterEgg();
+                       break;
+                   }
+               default: {
+               document.write("Это не оператор, это - " + operator);
+               break;
+               }
+               function EasterEgg() {
+                var body = document.getElementsByTagName("body")[0];
+                body.style.backgroundImage = "url(https://media.discordapp.net/attachments/593075723128930304/593077283296903178/Olegashka1.gif?width=452&height=452)";
+                var audio = new Audio();
+                audio.src = 'music.mp3';
+                audio.autoplay = true;
+           }
+               }
+               if (result <= 0 || result >= 0){
+               alert(result);
+                }
+           }
+           
+           </script>
+</body>
+</html>
