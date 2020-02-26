@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+}
+h1 {
+    margin: 0 auto;
+    display: block;
+    width: 330px;
+    font-size: 30px;
+}
+body {
+    padding: 15px;
+    background-color: antiquewhite;
+}
+section {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p {
+    line-height: 24px;
+}
