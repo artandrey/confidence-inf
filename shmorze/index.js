@@ -5,7 +5,7 @@ const letters = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й
 const numberOfLetter =[];
 const syphredMessageArray = [];
 let message;
-let fraze = "андрей";
+let fraze = "ьь Ъъь ъъ ЬЬЬ ьЪ ЬъЬ";
 
 
 
@@ -45,12 +45,12 @@ const toSypher = function() {
     doSroke(syphredMessageArray, " ")
 }
 
-
 const toUnsypher = function() {
     doArrayOfNumbers(fraze, " ", sypher);
     createSypher(numberOfLetter, syphredMessageArray, letters);
     doSroke(syphredMessageArray, "")
 }
+toUnsypher()
 
 console.log(message);
 
