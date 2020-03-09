@@ -6,12 +6,13 @@ const letters = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й
 const numberOfLetter = [];
 const syphredMessageArray = [];
 let message;
-let fraze = "ЪЬъ ЬЬЬ ЪъЬ Ъ ьЪ ььь у ьь Ъъь ъъ ЬЬЬ ьЪ ЬъЬ";
+let fraze = "андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей андрей ";
 
 const doArrayOfNumbers = function(fraze, splitMode, usedArray) {
   let lettersOfFraze = fraze.split(splitMode);
   for (let i = 0; i < lettersOfFraze.length; i++) {
     for (let j = 0; j < usedArray.length; j++) {
+      console.log(1)
       if (lettersOfFraze[i] == usedArray[j]) {
         numberOfLetter.push(j);
       }
@@ -37,13 +38,15 @@ const toSypher = function() {
   createSypher(numberOfLetter, syphredMessageArray, sypher);
   doSroke(syphredMessageArray, " ");
 };
-// toSypher()
+toSypher()
 
 const toUnsypher = function() {
   doArrayOfNumbers(fraze, " ", sypher);
   createSypher(numberOfLetter, syphredMessageArray, letters);
   doSroke(syphredMessageArray, "");
 };
-toUnsypher();
+// toUnsypher();
 
 console.log(message);
+
+

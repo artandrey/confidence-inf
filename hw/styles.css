@@ -21,7 +21,125 @@ h1 {
 -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
 }
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.light {
+    background-color: #2222220a;
+}
+.dark {
+    background-color: #22222215;
+}
+.description {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.content-box {
+    width: 80%;
+    margin: 0 auto;
+}
 img {
     width: 40%;
+    height: auto;
+}
+p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #414141;
+}
+h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #414141;
+}
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    background-color: #c70404bb;
+    color: #ffffff;
+}
+ul {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+li:nth-last-child(2n) {
+    background-color: #c7040423;
+}
+li {
+    background-color: #a0a0a031;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-position: inside;
+    font-family: 'Bellota', cursive;
+    font-weight: 600;
+    color: #414141;
+}
+img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+span {
+    color: brown;
+    font-weight: 600;
+}
+a {
+    text-decoration: underline;
+    color: brown;
+    font-weight: 600;
+}
+.flex-list {
+    list-style: none;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.flex-list-element:hover>.flex-img {
+    transform: scale(1.05);
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+}
+.flex-text {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.atention {
+    background-color: #f50101b0;
+    color: #ffffff;
+    padding: 20px;
+    border: solid #fcce0073 5px;
+}
+h4 {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #dd0505c7;
+}
+.img-box {
+    width: 80%;
+    overflow: hidden;
+    border-left: solid #47474767;
+    border-right: solid #47474767;
+    margin: 0 auto;
+}
+.low-resolution-img {
+    width: 400px;
     height: auto;
 }
