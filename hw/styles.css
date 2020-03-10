@@ -143,3 +143,14 @@ h4 {
     width: 400px;
     height: auto;
 }
+@media screen and (max-width:720px) {
+.low-resolution-img {
+width: 70%;
+}
+.img-box {
+width:95%;
+}
+.content-box {
+width:90%;
+}
+}
