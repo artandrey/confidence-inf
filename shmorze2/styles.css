@@ -438,6 +438,9 @@ h2::after {
     .scroll-text-box {
         height: unset;
     }
+h2::after {
+display:none
+}
     h2 {
         margin-top: 10px;
         color: #7fff00;
@@ -450,14 +453,13 @@ h2::after {
         background-color: chartreuse;
         color: black;
     }
-    h2::after {
+    .input::before {
         content: "";
         width: 2px;
         height: 15px;
         display: inline-block;
         background-color: #ffffff;
         vertical-align: middle;
-        margin-left: 5px;
         animation: after-text .6s steps(2) infinite alternate;
         box-shadow:0px 0px 10px 1px rgba(255,255,255,1),0px 0px 10px 1px rgba(255,255,255,1),0px 0px 20px 3px #49ff18,0px 0px 30px 4px #49ff18;
     }
