@@ -57,12 +57,23 @@ let header = document.querySelector('.header');
 let input = document.querySelector(".input");
 let btnSypher = document.querySelector(".input-btn-sypher");
 let btnUnsypher = document.querySelector(".input-btn-unsypher");
+let btnCopy = document.querySelector(".copy-btn");
+let i = document.querySelector(".copy-input");
 let frase = "";
-input.addEventListener('change', () => {frase = input.value;});
-btnSypher.addEventListener('click', () => { header.innerHTML = message; message = ""});
-btnUnsypher.addEventListener('click', () => { header.innerHTML = message; message = ""});
-
 let message = "";
+let convertedMessage = "";
+let textToCopy ="";
+
+input.addEventListener('change', () => {frase = input.value;});
+btnSypher.addEventListener('click', () => { header.innerHTML = formatString(convertedMessage);  i.value = textToCopy; convertedMessage = ""});
+btnUnsypher.addEventListener('click', () => { header.innerHTML = formatString(convertedMessage); i.value = textToCopy; convertedMessage = ""});
+btnCopy.addEventListener('click', () => {
+    i.select();
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+});
+
+
 
 //easter egg
 // input.addEventListener('change', () => {
@@ -78,7 +89,7 @@ let message = "";
 const doSypher = function() {
 
 for (let i = 0; i < frase.length; i++) {
-    message += " " + sypherObject[frase[i]]
+    convertedMessage += " " + sypherObject[frase[i]]
 }
 }
 
@@ -89,13 +100,23 @@ const doUnsypher = function() {
 let fraseArray = frase.split(" ");
 
 for (let i = 0; i < fraseArray.length; i++) {
-    message += unsypherObject[fraseArray[i]]
+    convertedMessage += unsypherObject[fraseArray[i]]
 }
 }
 // doUnsypher();
 
 
 
-
-
+const formatString = function(message) {
+  if (message.length > 500) {
+    textToCopy = message;
+    let shortedArray = message.split("");
+    shortedArray.splice(500);
+    let text = shortedArray.join("");
+    return `${text}...`;
+  } else {
+    textToCopy = message;
+    return message;
+  }
+};
 

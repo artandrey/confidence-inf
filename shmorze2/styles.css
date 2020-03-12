@@ -3,13 +3,166 @@
     padding: 0;
 }
 body {
-    background-color: black;
+    background-image: url(./img/snyatie-staryh-oboev.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.viniet-effect-box {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(19, 222, 0, 0.144) 78%, rgba(0,0,0,1) 100%);
+    z-index: 3;
+}
+.flat-section {
+    max-width: 1920px;
+    height: 100vh;
+    overflow: hidden;
+}
+.main-interface-box {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.computer-monitor {
+width: 100%;
+height: auto;
+position: relative;
+z-index: 3;
+}
+.monitor-background {
+    background: radial-gradient(circle, rgba(21,19,25,1) 0%, rgba(28,22,20,1) 71%, rgba(0,0,0,1) 100%);
+    position: relative;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    top: -600px;
+
+}
+.interface-box {
+    position: relative;
+    z-index: 7;
+    top: -950px;
+}
+.interface {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+/*BG DESIGN*/
+
+.background-items {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.shelf-box {
+    width: min-content;
+    height: min-content;
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+}
+.shelf-img {
+    width: 500px;
+}
+.bobina-box {
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.bobina-img {
+    width: 150px;
+    transform: rotate(360deg);
+    animation: spining 30s ease-in-out infinite alternate;
+    animation-delay: 3s;
+}
+.bobina-1 {
+    animation-delay: 5s;
+}
+
+@keyframes spining {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.magnitophone {
+    position: relative;
+    right: -100px;
+    bottom: -20px;
+    width: 350px;
+    height: 330px;
+    background-image: url(./img/player.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.table {
+    background-image: url(./img/table.png);
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+}
+.input {
+    width: 100%;
+    background: transparent;
+    color: rgb(194, 253, 192);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.623), 0 0 10px rgba(255, 255, 255, 0.555), 0 0 15px rgba(255, 255, 255, 0.555), 0 0 10px #4aff188f, 0 0 30px rgba(74, 255, 24, 0.486), 0 0 40px rgba(74, 255, 24, 0.438), 0 0 15px rgba(74, 255, 24, 0.459), 0 0 15px #4aff1891;
+    border: transparent;
+    border-bottom: solid rgba(128, 255, 0, 0.568) 1px;
+    outline: none;  
+}
+input::before {
+    content: "";
+    display: inline-block;
+}
+.btn-box {
+    margin-top: 10px;
+}
+.input-btn {
+    background: transparent;
+    color: rgb(194, 253, 192);
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 15px #49FF18, 0 0 15px #49ff18;
+    border: solid rgba(128, 255, 0, 0.568) 1px;
+    outline: none;
+    padding: 1px 10px 1px 10px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 255, 0, 0.199);
+}
+.discets-img  {
+    width: 350px;
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+    z-index: 2;
+}
+.scroll-text-box {
+    height: 200px;
 }
 h2 {
-    text-align: center;
+    margin-top: 10px;
     color: #7fff00;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 color: #FFFFFF;
+font-size: 14px;
 }
 h2::selection {
     text-shadow: none;
@@ -19,19 +172,27 @@ h2::selection {
 h2::after {
     content: "";
     width: 2px;
-    height: 16px;
+    height: 15px;
     display: inline-block;
-    background-color: chartreuse;
+    background-color: #ffffff;
     vertical-align: middle;
     margin-left: 5px;
-    filter: blur(1px);
-    animation: after-text 1s steps(2) infinite;
+    animation: after-text .6s steps(2) infinite alternate;
+    box-shadow:0px 0px 10px 1px rgba(255,255,255,1),0px 0px 10px 1px rgba(255,255,255,1),0px 0px 20px 3px #49ff18,0px 0px 30px 4px #49ff18;
 }
 @keyframes after-text {
     from {
-        opacity: 0;
+        visibility: hidden;
     }
     to {
-        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+@media screen and (max-width:1400px) {
+    .main-interface-box {
+        bottom: 90px;
     }
 }

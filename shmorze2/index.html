@@ -7,10 +7,39 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <input class="input" type="text">
-    <button class="input-btn-sypher" onclick="doSypher()">SYPHER</button>
-    <button class="input-btn-unsypher" onclick="doUnsypher()">UNSYPHER</button>
-    <h2 class="header"></h2>
+    <div class="viniet-effect-box"></div>
+    <div class="background-items">
+        <div class="shelf-box">
+            <div class="magnitophone">
+                <div class="bobina-box">
+                    <img class = "bobina-img bobina-1"src="./img/bobina.png" alt="">
+                    <img class = "bobina-img bobina-2"src="./img/bobina.png" alt="">
+                </div>
+            </div>
+            <img class="shelf-img" src="./img/shelf.png" alt="">
+        </div>
+    </div>
+    <div class="table"></div>
+
+    <div class="main-interface-box">
+    <img src="./img/computer.png"  class="computer-monitor" alt="computer" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+    <div class="monitor-background"></div>
+    <div class="interface-box">
+        <div class="interface">   
+        <input class="input" type="text">
+        <div class="btn-box">
+            <button class="input-btn input-btn-sypher" onclick="doSypher()">SYPHER</button>
+            <button class="input-btn input-btn-unsypher" onclick="doUnsypher()">UNSYPHER</button>
+            <button class="input-btn copy-btn">COPY</button>   
+        </div>
+        <div class="scroll-text-box">
+        <h2 class="header"></h2>
+        </div>
+        </div>
+    </div>
+    </div>
+    <img class="discets-img" src="./img/discets-1.png" alt="">
+    <input class="copy-input" style="visibility: hidden;"></input>
     <script src="./index.js"></script>
 </body>
 </html>
