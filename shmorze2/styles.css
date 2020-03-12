@@ -412,7 +412,7 @@ h2::after {
         background: transparent;
         color: rgb(194, 253, 192);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.623), 0 0 10px rgba(255, 255, 255, 0.555), 0 0 15px rgba(255, 255, 255, 0.555), 0 0 10px #4aff188f, 0 0 30px rgba(74, 255, 24, 0.486), 0 0 40px rgba(74, 255, 24, 0.438), 0 0 15px rgba(74, 255, 24, 0.459), 0 0 15px #4aff1891;
-        border: solid rgba(128, 255, 0, 0.568) 1px;
+        border-bottom: solid rgba(128, 255, 0, 0.568) 1px;
         outline: none;  
     }
     input::before {
