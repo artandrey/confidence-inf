@@ -454,8 +454,8 @@ display:none
         color: black;
     }
     .input::before {
-        position: relative;
-        top: 10px;
+
+
         content: "";
         width: 2px;
         height: 15px;
