@@ -196,3 +196,279 @@ h2::after {
         bottom: 90px;
     }
 }
+
+
+.easter-egg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: black;
+    overflow: hidden;
+}
+.morpheus-box {
+    width: 800px;
+    margin: 0 auto;
+    height: 763px;
+    opacity: 1;
+    animation: morpheus-main 2s linear infinite normal;
+    animation-iteration-count: 1;
+}
+.morpheus-img {
+    margin: 0 auto;
+    display: block;
+}
+.red-hand {
+    position: relative;
+    top: -337px;
+    right: -15%;
+    width: 135px;
+    height: 117px;
+    background-image: url(./img/red.png);
+    animation: morpheus-hands 6s linear infinite normal;
+    animation-direction: alternate-reverse;
+    animation-delay: .7s;
+    opacity: 1;
+}
+.blue-hand {
+    position: relative;
+    top: -450px;
+    left: 69%;
+    width: 135px;
+    height: 117px;
+    background-image: url(./img/blue.png);
+    animation: morpheus-hands 6s linear infinite normal;
+    animation-direction: alternate-reverse;
+    opacity: 1;
+}
+
+.pill {
+    width: 20px;
+    height: 20px;
+}
+.red {
+    position: relative;
+    top: 37%;
+    right: -50%;
+    border-radius: 68% 32% 77% 23% / 65% 30% 70% 35%;
+    box-shadow: 0px 0px 10px 0px rgba(250,0,0,1);
+    background-image: url(./img/red-texture.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    animation: red-pill linear infinite alternate-reverse;
+    transition: .2s ease-in-out;
+}
+.red:hover {
+    box-shadow: 0px 0px 1000px 300px rgba(250,0,0,1);
+}
+.blue {
+    position: relative;
+    top: 34%;
+    right: -35px;
+    border-radius: 26% 74% 28% 72% / 22% 76% 24% 78%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 138, 230, 0.671);
+    background-image: url(./img/blue-texture.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    animation: blue-pill linear infinite alternate-reverse;
+    transition: .2s ease-in-out;
+}
+.blue:hover {
+    box-shadow: 0px 0px 100px 300px rgba(0, 138, 230, 0.644);
+}
+
+
+
+
+
+@keyframes morpheus-main {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes morpheus-hands {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+@keyframes red-pill {
+    0% {
+        box-shadow: 0px 0px 10px 0px rgba(250,0,0,1);
+    }
+    50% {
+        box-shadow: 0px 0px 20px 0px rgba(250,0,0,1);
+    }
+    100% {
+        box-shadow: 0px 0px 5px 0px rgba(250,0,0,1);
+    }
+}
+@keyframes blue-pill {
+    0% {
+        box-shadow: 0px 0px 10px 0px rgba(0,138,230,1);
+    }   
+    50% {
+        box-shadow: 0px 0px 20px 0px rgba(0,138,230,1);
+    } 
+    100% {
+        box-shadow: 0px 0px 5px 0px rgba(0,138,230,1);
+    }
+}
+@media screen and (max-width:1100px) {
+    body {
+        background: linear-gradient(0deg, rgb(1, 6, 12) 0%, rgba(0,0,0,1) 100%);
+    }
+    .viniet-effect-box {
+        display: none   ;
+    }
+    .flat-section {
+        max-width: 1920px;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .main-interface-box {
+        width: 100%;
+        height: unset;
+        position: static;
+        transform: unset;
+    }
+    .computer-monitor {
+        display: none;
+    }
+    .monitor-background {
+        display: none;
+    }
+    .interface-box {
+        position: static;
+        width: 100%;
+
+    }
+    .interface {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    
+    
+    /*BG DESIGN*/
+    
+    .background-items {
+        display: none;
+    }
+    .shelf-box {
+        display: none;
+    }
+    .shelf-img {
+        display: none;
+    }
+    .bobina-box {
+        display: none;
+    }
+    .bobina-img {
+        display: none;
+    }
+    .bobina-1 {
+        animation-delay: 5s;
+    }
+    
+    @keyframes spining {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    
+    
+    .magnitophone {
+        display: none;
+    }
+    
+    .table {
+        display: none;
+    }
+    .input {
+        width: 100%;
+        height: 30px;
+        background: transparent;
+        color: rgb(194, 253, 192);
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.623), 0 0 10px rgba(255, 255, 255, 0.555), 0 0 15px rgba(255, 255, 255, 0.555), 0 0 10px #4aff188f, 0 0 30px rgba(74, 255, 24, 0.486), 0 0 40px rgba(74, 255, 24, 0.438), 0 0 15px rgba(74, 255, 24, 0.459), 0 0 15px #4aff1891;
+        border: transparent;
+        border-bottom: solid rgba(128, 255, 0, 0.568) 1px;
+        outline: none;  
+    }
+    input::before {
+        content: "";
+        display: inline-block;
+    }
+    .btn-box {
+        margin-top: 10px;
+    }
+    .input-btn {
+        background: transparent;
+        color: rgb(194, 253, 192);
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 15px #49FF18, 0 0 15px #49ff18;
+        border: solid rgba(128, 255, 0, 0.568) 1px;
+        outline: none;
+        padding: 1px 10px 1px 10px;
+        font-size: 20px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 255, 0, 0.199);
+    }
+    .discets-img  {
+        display: none;
+    }
+    .scroll-text-box {
+        height: unset;
+    }
+    h2 {
+        margin-top: 10px;
+        color: #7fff00;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    color: #FFFFFF;
+    font-size: 14px;
+    }
+    h2::selection {
+        text-shadow: none;
+        background-color: chartreuse;
+        color: black;
+    }
+    h2::after {
+        content: "";
+        width: 2px;
+        height: 15px;
+        display: inline-block;
+        background-color: #ffffff;
+        vertical-align: middle;
+        margin-left: 5px;
+        animation: after-text .6s steps(2) infinite alternate;
+        box-shadow:0px 0px 10px 1px rgba(255,255,255,1),0px 0px 10px 1px rgba(255,255,255,1),0px 0px 20px 3px #49ff18,0px 0px 30px 4px #49ff18;
+    }
+    @keyframes after-text {
+        from {
+            visibility: hidden;
+        }
+        to {
+            visibility: visible;
+        }
+    }
+    
+    
+}
