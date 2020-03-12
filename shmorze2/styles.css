@@ -453,7 +453,7 @@ display:none
         background-color: chartreuse;
         color: black;
     }
-    .input::before {
+    .input-box::before {
 
 
         content: "";
