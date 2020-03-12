@@ -405,6 +405,8 @@ h2::after {
         display: none;
     }
     .input {
+        margin-top:100px;
+
         width: 90%;
         height: 30px;
         background: transparent;
