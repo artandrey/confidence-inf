@@ -335,6 +335,7 @@ h2::after {
     padding: 20px;
     text-align: center;
     transition: .3s ease-in-out;
+    display: block;
 }
 .leave-btn:hover {
     background-color: #ffffff5d;
