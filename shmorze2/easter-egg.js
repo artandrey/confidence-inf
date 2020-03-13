@@ -31,5 +31,5 @@ let gendalf = document.querySelector(".gendalf");
 const leave = function() {
     location.href=location.href;
 }
-blue.addEventListener("click", () => {easterEggBox.style.display = "none"; location.href=location.href;})
+blue.addEventListener("click", () => {easterEggBox.style.display = "none"; audio.pause(); easterEggBox.style.display = "none";})
 red.addEventListener("click", () => {gendalf.style.display = "block"; audio.pause(); gendalfSong.play();})
