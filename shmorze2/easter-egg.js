@@ -28,8 +28,6 @@ const skip = function() {
 let red = document.querySelector(".red");
 let blue = document.querySelector(".blue");
 let gendalf = document.querySelector(".gendalf");
-const leave = function() {
-    location.href=location.href;
-}
+
 blue.addEventListener("click", () => {easterEggBox.style.display = "none"; audio.pause(); easterEggBox.style.display = "none";})
 red.addEventListener("click", () => {gendalf.style.display = "block"; audio.pause(); gendalfSong.play();})
