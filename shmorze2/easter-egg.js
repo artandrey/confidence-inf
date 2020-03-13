@@ -3,6 +3,8 @@
 
 let audio = new Audio();
 audio.src = 'last-chance.mp3';
+let gendalfSong = new Audio();
+gendalfSong.src = "gendalf.mp3"
 
 
 let easerEggInput = document.querySelector(".input");
@@ -30,4 +32,4 @@ const leave = function() {
     location.href=location.href;
 }
 blue.addEventListener("click", () => {easterEggBox.style.display = "none"; location.href=location.href;})
-red.addEventListener("click", () => {gendalf.style.display = "block"; audio.pause();})
+red.addEventListener("click", () => {gendalf.style.display = "block"; audio.pause(); gendalfSong.play();})
