@@ -592,7 +592,7 @@ h2::after {
 }
 .red-hand {
     position: relative;
-    top: -337px;
+    top: -483px;
     right: 0;
     width: 120px;
     height: 100px;
@@ -606,7 +606,7 @@ h2::after {
 .blue-hand {
     position: relative;
     background-size: cover;
-    top: -450px;
+    top: -590px;
     left: 69%;
     width: 120px;
     height: 100px;
