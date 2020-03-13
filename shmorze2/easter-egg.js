@@ -18,7 +18,7 @@ const easerEggRun = function(value) {
 let easterEggBox = document.querySelector(".easter-egg");
 let morpheusBox = document.querySelector(".morpheus-box");
 let canvas = document.querySelector(".canvas");
-let skipBtn = document.querySelector(".skip-btn");
+let skipBtn = document.querySelector(".skip-btn")
 const skip = function() {
     morpheusBox.style.display = "block";
     canvas.style.display = "none";
@@ -28,6 +28,8 @@ const skip = function() {
 let red = document.querySelector(".red");
 let blue = document.querySelector(".blue");
 let gendalf = document.querySelector(".gendalf");
-
+const leave = function() {
+    location.href=location.href;
+}
 blue.addEventListener("click", () => {easterEggBox.style.display = "none"; audio.pause(); easterEggBox.style.display = "none";})
 red.addEventListener("click", () => {gendalf.style.display = "block"; audio.pause(); gendalfSong.play();})
