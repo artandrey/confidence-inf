@@ -40,7 +40,7 @@ const toSypher = function() {
 };
 toSypher()
 
-const toUnsypher = function() {
+const toUnsypher = functio() {
   doArrayOfNumbers(fraze, " ", sypher);
   createSypher(numberOfLetter, syphredMessageArray, letters);
   doSroke(syphredMessageArray, "");
