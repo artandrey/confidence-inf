@@ -63,6 +63,7 @@ let frase = "";
 let message = "";
 let convertedMessage = "";
 let textToCopy ="";
+let loadingScreen = document.querySelector('.welcome-to-matrix')
 
 input.addEventListener('change', () => {frase = input.value;});
 btnSypher.addEventListener('click', () => { header.innerHTML = formatString(convertedMessage);  i.value = textToCopy; convertedMessage = ""});
@@ -73,6 +74,7 @@ btnCopy.addEventListener('click', () => {
     window.getSelection().removeAllRanges();
 });
 
+window.addEventListener('load', () => {loadingScreen.style.display = 'none'}) 
 
 
 //easter egg

@@ -14,6 +14,45 @@ body {
     background-size: cover;
     height: 100vh;
 }
+.welcome-to-matrix {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+    background-color: black;
+    animation: loading-screen 3s linear 1;
+}
+.welcome-text {
+    margin: 20px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 15px #49FF18, 0 0 15px #49ff18;
+}
+.welcome-text::after {
+    content: "";
+    color: white;
+    animation: dots 3s linear infinite;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 15px #49FF18, 0 0 15px #49ff18;
+}
+.welcome-info {
+    margin-left: 20px;
+    color: white;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 15px #49FF18, 0 0 15px #49ff18;
+}
+@keyframes dots {
+    0% {
+        content: ""
+    }
+    30% {
+        content: ".";
+    }
+    60% {
+        content: "..";
+    }
+    100% {
+        content: "...";
+    }
+}
 .viniet-effect-box {
     position: absolute;
     width: 100vw;
@@ -295,7 +334,7 @@ h2::after {
     transition: .2s ease-in-out;
 }
 .red:hover {
-    box-shadow: 0px 0px 1000px 300px rgba(250,0,0,1);
+    box-shadow: 0px 0px 100px 30px rgba(250,0,0,1);
 }
 .blue {
     position: relative;
@@ -310,7 +349,7 @@ h2::after {
     transition: .2s ease-in-out;
 }
 .blue:hover {
-    box-shadow: 0px 0px 100px 300px rgba(0, 138, 230, 0.644);
+    box-shadow: 0px 0px 100px 30px rgba(0, 138, 230, 0.644);
 }
 
 .gendalf {
