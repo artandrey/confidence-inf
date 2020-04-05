@@ -90,7 +90,7 @@ z-index: 3;
     width: 80%;
     margin: 0 auto;
     top: -600px;
-
+    pointer-events: none;
 }
 .interface-box {
     position: relative;
@@ -116,6 +116,7 @@ button {
     width: 100%;
     height: 100vh;
     position: absolute;
+    pointer-events: none;
 }
 .shelf-box {
     width: min-content;
