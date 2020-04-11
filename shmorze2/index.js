@@ -143,9 +143,11 @@ window.addEventListener('load', () => {setTimeout(() => loadingScreen.style.disp
 
 
 const doSypher = function() {
-
 for (let i = 0; i < frase.length; i++) {
-    convertedMessage += " " + sypherObject[frase[i]]
+  if(sypherObject[frase[i]] === undefined)
+    convertedMessage += " " + frase[i];
+  else
+    convertedMessage += " " + sypherObject[frase[i]];
 }
 }
 
@@ -156,7 +158,10 @@ const doUnsypher = function() {
 let fraseArray = frase.split(" ");
 
 for (let i = 0; i < fraseArray.length; i++) {
-    convertedMessage += unsypherObject[fraseArray[i]]
+  if (unsypherObject[fraseArray[i]] === undefined) 
+  convertedMessage += fraseArray[i];
+  else
+    convertedMessage += unsypherObject[fraseArray[i]];
 }
 }
 // doUnsypher();

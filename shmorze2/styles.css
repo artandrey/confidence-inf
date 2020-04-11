@@ -543,7 +543,7 @@ h2::after {
         color: #ffffff;
         vertical-align: middle;
         animation: after-text .6s steps(2) infinite alternate;
-        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 15px #49FF18, 0 0 15px #49ff18;
+        text-shadow:unset;
     }
     .input-box:focus-within.input-box::before {
         opacity: 0;
@@ -554,7 +554,7 @@ h2::after {
     .input-btn {
         background: transparent;
         color: rgb(194, 253, 192);
-        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 15px #49FF18, 0 0 15px #49ff18;
+        text-shadow:unset;
         border: solid rgba(128, 255, 0, 0.568) 1px;
         outline: none;
         padding: 1px 10px 1px 10px;
