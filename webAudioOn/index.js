@@ -1,5 +1,7 @@
 
-
+    document.querySelector('body').addEventListener('click', ()=> {
+        alert(123)
+    })
     document.querySelector('body').click()
     console.log(1233);
     
