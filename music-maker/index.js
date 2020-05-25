@@ -5,7 +5,6 @@ const left = document.querySelector('#L');
 const rigth = document.querySelector('#R');
 const button = document.querySelector('#send');
 const result = document.querySelector('h2');
-const solo = document.querySelector('#SOLO')
 let text = '';
 const rigthNotesObj = {
     c : 'w1',
