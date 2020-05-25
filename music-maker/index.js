@@ -68,7 +68,7 @@ button.addEventListener('click', () => {
     const tetxArray = text.split('');
 
         tetxArray.forEach(el => {
-            if (minusCounter === 12) {
+            if (minusCounter === 6) {
                 minusCounter = 0;
                 if (firstSymbol) {
                     firstSymbol = false
@@ -79,6 +79,7 @@ button.addEventListener('click', () => {
                 minusCounter++
             }
             else {
+                minusCounter = 0
                 if (firstSymbol) {
                     firstSymbol = false
                     if (left.checked) {
