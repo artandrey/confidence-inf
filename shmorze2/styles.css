@@ -671,6 +671,9 @@ h2::after {
 /* easter-egg ---------------------------------------------------------------------------*/
 
 @media screen and (max-width:900px) {
+h2 {
+    overflow-y: unset;
+    }
 .easter-egg {
     display: none;
     position: absolute;
