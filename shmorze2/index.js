@@ -30,7 +30,7 @@ let sypherObject = {
     "ф":"ъъъ",
     "х":"ъЪ",
     "ц":"ьЬ",
-    "ч":"ъЪь",
+    "ч":"ЪУЪУъЪь",
     "ш":"ьЬъ",
     "щ":"Е",
     "ь":"ъЕ",
@@ -93,7 +93,60 @@ let sypherObject = {
     "7":"ъЪЪЪеЪ",
     "8":"ъЪЪе",
     "9":"ъЪЪЬЕЪ",
-    "0":"ъЪЪьЕъ",
+    "0":"ъЪЪьььЕъ",
+    "a":"ъЪЪьььььЕъ",
+    "b":"ъЪььььЪьЕъ",
+    "c":"ъЪЪЪьЪьЕъ",
+    "d":"ъЪьььЪьЕъ",
+    "e":"ъЪЪьЪЪЕъ",
+    "f":"ЪЪъЪЪььЕъ",
+    "g":"ъЪЪЪЪЪЪьЕъ",
+    "h":"ъЪЪьЪЪЪЪЕъ",
+    "k":"ъЪЪьъьЪЕъ",
+    "l":"ъЪЪьУУЪЪЪЕъ",
+    "m":"ъЪЪьЕъ",
+    "n":"ъЪЪЪЪЪУУУьЕъ",
+    "o":"ъЪъъЬЬЬЪьЕъ",
+    "p":"ъЪЪЬЬЪЪьЕъ",
+    "q":"ъЪьььЪЪЪЪЪЪьЕъ",
+    "r":"ъЪЪьЪьЕъЪьЪ",
+    "s":"ъЪььЪьЪЪьЕъ",
+    "t":"ЪЪЪЪЪьььъЪЪьЕъ",
+    "u":"ъЪЪЪЪЪььььЕъ",
+    "v":"ъЪЪьЕЪЪьЪьЪьъ",
+    "w":"ъЪуууЪьЪьЕъ",
+    "x":"ъЪууУЪьЕъ",
+    "y":"ъЪЪьЕУууъ",
+    "z":"ъУууЪЪУьЕъ",
+    "i":"ъЪЪьУУУуЕъ",
+    "`":"ъЪЪууууьЕъ",
+    "A":"УУъЪЪьььььЕъ",
+    "B":"УУъЪььььЪьЕъ",
+    "C":"УУъЪЪЪьЪьЕъ",
+    "D":"УУъЪьььЪьЕъ",
+    "E":"УУъЪЪьЪЪЕъ",
+    "F":"УУЪЪъЪЪььЕъ",
+    "G":"УУъЪЪЪЪЪЪьЕъ",
+    "H":"УУъЪЪьЪЪЪЪЕъ",
+    "K":"УУъЪЪьъьЪЕъ",
+    "L":"УУъЪЪьУУЪЪЪЕъ",
+    "M":"УУъЪЪьЕъ",
+    "N":"УУъЪЪЪЪЪУУУьЕъ",
+    "O":"УУъЪъъЬЬЬЪьЕъ",
+    "P":"УУъЪЪЬЬЪЪьЕъ",
+    "Q":"УУъЪьььЪЪЪЪЪЪьЕъ",
+    "R":"УУъЪЪьЪьЕъЪьЪ",
+    "S":"УУъЪььЪьЪЪьЕъ",
+    "T":"УУЪЪЪЪЪьььъЪЪьЕъ",
+    "U":"УУъЪЪЪЪЪььььЕъ",
+    "V":"УУъЪЪьЕЪЪьЪьЪьъ",
+    "W":"УУъЪуууЪьЪьЕъ",
+    "X":"УУъЪууУЪьЕъ",
+    "Y":"УУъЪЪьЕУууъ",
+    "Z":"УУъУууЪЪУьЕъ",
+    "I":"УУъЪЪьУУУуЕъ",
+    "j":"УУъУУУуЕъ",
+    "J":"УУъЪЪееееЕъ",
 }
 
 
@@ -120,8 +173,8 @@ let textToCopy ="";
 let loadingScreen = document.querySelector('.welcome-to-matrix')
 
 input.addEventListener('change', () => {frase = input.value;});
-btnSypher.addEventListener('click', () => { header.innerHTML = formatString(convertedMessage);  i.value = textToCopy; convertedMessage = ""});
-btnUnsypher.addEventListener('click', () => { header.innerHTML = formatString(convertedMessage); i.value = textToCopy; convertedMessage = ""});
+btnSypher.addEventListener('click', () => { header.textContent = formatString(convertedMessage);  i.value = textToCopy; convertedMessage = ""});
+btnUnsypher.addEventListener('click', () => { header.textContent = formatString(convertedMessage); i.value = textToCopy; convertedMessage = ""});
 btnCopy.addEventListener('click', () => {
     i.select();
     document.execCommand("copy");
@@ -169,7 +222,7 @@ for (let i = 0; i < fraseArray.length; i++) {
 
 
 const formatString = function(message) {
-  if (message.length > 500) {
+  if (message.length > 3500) {
     textToCopy = message;
     let shortedArray = message.split("");
     shortedArray.splice(500);

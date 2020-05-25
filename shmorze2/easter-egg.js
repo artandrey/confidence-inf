@@ -3,8 +3,9 @@
 
 let audio = new Audio();
 audio.src = 'last-chance.mp3';
-let gendalfSong = new Audio();
-gendalfSong.src = "gendalf.mp3"
+let solomonsTheme = new Audio();
+solomonsTheme.src = "Solomons-Theme.mp3"
+solomonsTheme.volume = 0.05
 
 
 let easerEggInput = document.querySelector(".input");
@@ -23,6 +24,7 @@ const skip = function() {
     morpheusBox.style.display = "block";
     canvas.style.display = "none";
     skipBtn.style.display = "none";
+    
 }
 
 let red = document.querySelector(".red");
@@ -32,4 +34,4 @@ const leave = function() {
     window.location.href=location.href;
 }
 blue.addEventListener("click", () => {easterEggBox.style.display = "none"; audio.pause(); easterEggBox.style.display = "none";})
-red.addEventListener("click", () => {gendalf.style.display = "block"; audio.pause(); gendalfSong.play();})
+red.addEventListener("click", () => {gendalf.style.display = "block"; audio.pause(); solomonsTheme.play();})
