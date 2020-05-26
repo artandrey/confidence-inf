@@ -10,16 +10,16 @@
     font-style: normal;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     height: 0;
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(16, 199, 22, 0.308);
-    -moz-box-shadow: 0px 0px 10px 5px rgba(16, 199, 22, 0.308);
-    box-shadow: 0px 0px 10px 5px rgba(16, 199, 22, 0.308);
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(16, 199, 22, 0.308);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(16, 199, 22, 0.308);
+    box-shadow: 0px 0px 20px 5px rgba(16, 199, 22, 0.308);
 
   }
   ::-webkit-scrollbar-button {
     width: 0px;
-    height: 0;
+    height: 0px;
     background-color: #4aff1886;
   }
   ::-webkit-scrollbar-thumb {
@@ -287,7 +287,7 @@ input::before {
     height: 200px;
 }
 h2 {
-    width: 80%;
+    width: 84%;
     padding-left: 40px;
     padding-top: 15px;
     padding-bottom: 20px;

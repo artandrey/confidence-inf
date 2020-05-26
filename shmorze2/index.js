@@ -147,7 +147,7 @@ let sypherObject = {
     "I":"УУъЪЪьУУУуЕъ",
     "j":"УУъУУУуЕъ",
     "J":"УУъЪЪееееЕъ",
-}
+};
 
 
 //creating unsypher Object
@@ -225,7 +225,7 @@ const formatString = function(message) {
   if (message.length > 3500) {
     textToCopy = message;
     let shortedArray = message.split("");
-    shortedArray.splice(500);
+    shortedArray.splice(3000);
     let text = shortedArray.join("");
     return `${text}...`;
   } else {
