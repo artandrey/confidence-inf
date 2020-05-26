@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    display: inline-block;
+    width: 100%;
+    background-color: #6d0000;
+    height: 400px;
+    position: relative; /*это нужно для абсолютного позиционирования чёрныъх клавиш*/
+}
+.white {
+    background-color: white;
+    width: 9.7%;
+    height: 100%;
+    position: relative;
+}
+.black {
+    position: absolute; /*абсолютное позиционирование относительно родителя*/
+    background-color: black;
+    width: 20%;
+    height: 70%;
+}
