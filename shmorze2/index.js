@@ -170,9 +170,17 @@ let frase = "";
 let message = "";
 let convertedMessage = "";
 let textToCopy ="";
-let loadingScreen = document.querySelector('.welcome-to-matrix')
+let loadingScreen = document.querySelector('.welcome-to-matrix');
+const notificationTetx = document.querySelector('.input-box__notification-text');
 
-input.addEventListener('change', () => {frase = input.value;});
+input.addEventListener('input', () => {frase = input.value; 
+  if(input.value.length > 0) {
+  notificationTetx.classList.add('input-box__notification-text__hide')
+}
+else {
+  notificationTetx.classList.remove('input-box__notification-text__hide')
+}
+});
 btnSypher.addEventListener('click', () => { header.textContent = formatString(convertedMessage);  i.value = textToCopy; convertedMessage = ""});
 btnUnsypher.addEventListener('click', () => { header.textContent = formatString(convertedMessage); i.value = textToCopy; convertedMessage = ""});
 btnCopy.addEventListener('click', () => {
@@ -181,7 +189,21 @@ btnCopy.addEventListener('click', () => {
     window.getSelection().removeAllRanges();
 });
 
-window.addEventListener('load', () => {setTimeout(() => loadingScreen.style.display = 'none', 1000);}) 
+const showInstruction = function() {
+  let counter = 0;
+  const instructionText = 'Привет, хочешь познать тайны матрицы? На этом сайте можеш зашифровать своё послание или расшифровать полученное от друга';
+  const wrtiteLetter = setInterval(()=> {
+    if(!instructionText[counter]) clearInterval(wrtiteLetter)
+    else {
+    header.textContent += instructionText[counter];
+    counter++;
+    }
+  },60)
+}
+
+
+window.addEventListener('load', () => {setTimeout(() => loadingScreen.style.display = 'none', 1000); showInstruction();}) 
+
 
 
 //easter egg
