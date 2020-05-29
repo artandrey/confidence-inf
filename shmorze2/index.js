@@ -198,7 +198,7 @@ const showInstruction = function() {
     header.textContent += instructionText[counter];
     counter++;
     }
-  },60)
+  },20)
 }
 
 
