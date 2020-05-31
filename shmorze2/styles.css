@@ -561,10 +561,10 @@ h2::after {
         height: 40px;
     }
     .input-box:hover>.input-box__notification-text {
-        transform: translateY(500px);
+        transform: translateY(-500px);
     }
     .input-box__notification-text__hide {
-        transform: translateY(500px);
+        transform: translateY(-500px);
     }
     .input {
         height: 100%;
