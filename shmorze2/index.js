@@ -192,13 +192,18 @@ btnCopy.addEventListener('click', () => {
 const showInstruction = function() {
   let counter = 0;
   const instructionText = 'Привет, хочешь познать тайны матрицы? На этом сайте можеш зашифровать своё послание или расшифровать полученное от друга';
-  const wrtiteLetter = setInterval(()=> {
+  if(document.querrySelector("body").offsetWidth < 1200) {
+       header.textContent = instructionText;
+} 
+else {
+const wrtiteLetter = setInterval(()=> {
     if(!instructionText[counter]) clearInterval(wrtiteLetter)
     else {
     header.textContent += instructionText[counter];
     counter++;
     }
   },20)
+}
 }
 
 
@@ -231,7 +236,6 @@ for (let i = 0; i < frase.length; i++) {
 const doUnsypher = function() {
 
 let fraseArray = frase.split(" ");
-
 for (let i = 0; i < fraseArray.length; i++) {
   if (unsypherObject[fraseArray[i]] === undefined) 
   convertedMessage += fraseArray[i];
