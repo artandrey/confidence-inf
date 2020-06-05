@@ -192,7 +192,7 @@ btnCopy.addEventListener('click', () => {
 const showInstruction = function() {
   let counter = 0;
   const instructionText = 'Привет, хочешь познать тайны матрицы? На этом сайте можеш зашифровать своё послание или расшифровать полученное от друга';
-  if(document.querrySelector("body").offsetWidth < 1200) {
+  if(document.querySelector("body").offsetWidth < 1200) {
        header.textContent = instructionText;
 } 
 else {
